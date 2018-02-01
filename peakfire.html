@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- PEAKFIRE THEME v.1 || Copied from Linkfire. -->
+	<!-- Created with ❤ in Christian's room. -->
+	<!-- Say hi via email: hello@chrstnsmth.ng. -->
+	<!-- Support the creator via: chrstnsmth.ng/support -->
+	<title>Omnilink</title>
+	<link rel="shortcut icon" href="">
+	<!-- Recommend updating these with your info. -->
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta name="description" content="Smart Links For Music Marketing.">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<!-- Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@chrstnsmthng">
+	<meta name="twitter:title" content="Omnilink">
+	<meta name="twitter:description" content="">
+	<!-- Assets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<style>
+	    html, body {
+	    	margin: 0;
+			width: 100%;
+	    }
+	    body {
+	    	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	    	font-size: 14px;
+	    	line-height: 1.42857143;
+	    	color: #333;
+	    }
+	    #bg {
+	    	position: fixed;
+	    	z-index: -100;
+	    	top: -50%;
+	    	left: -50%;
+	    	width: 200%;
+	    	height: 200%;
+	    	background-color: #ffffff;
+	    	transform: translate3d(0, 0, 0);
+	    	-o-transform: translate3d(0, 0, 0);
+	    	-ms-transform: translate3d(0, 0, 0);
+	    	-moz-transform: translate3d(0, 0, 0);
+	    	-webkit-transform: translate3d(0, 0, 0);
+	    }
+	    #bg img {
+	    	position: absolute;
+	    	top: 0;
+	    	left: 0;
+	    	right: 0;
+	    	bottom: 0;
+	    	margin: auto;
+	    	min-width: 55%;
+	    	min-height: 55%;
+	    	filter: blur(30px);
+	    	-webkit-filter: blur(30px);
+	    	-moz-filter: blur(30px);
+	    	-o-filter: blur(30px);
+	    	-ms-filter: blur(30px);
+	    	opacity: .7;
+	    }
+	    #contain {
+	    	overflow: visible;
+	    	max-width: 400px;
+			width: 100%;
+	    	display: block;
+	    	margin: auto;
+	    	padding: 0;
+	    	border: 0;
+	    	font-size: 16px;
+	    	vertical-align: baseline;
+	    }
+	    #imagecontainer {
+	    	position: relative;
+	    	display: block;
+	    	overflow: hidden;
+	    }
+	    #imagecontainer img {
+	    	max-width: 400px;
+			width: 100%;
+	    	display: block;
+	    	position: relative;
+	    	z-index: 0;
+	    	background-size: 100%;
+	    }
+	    #header {
+	    	position: relative;
+	    	max-width: 400px;
+	    }
+	    #header .header {
+	    	background-color: #181818;
+	    	text-align: center;
+	    	color: #fff;
+	    }
+	    #header .service {
+	    	background-color: #fff;
+	    }
+	    #header .header h1, #header .header p {
+	    	padding: 16px 20px 0;
+	    	font-size: 18px;
+	    	font-family: Roboto, sans-serif;
+	    	font-weight: 300;
+	    	white-space: pre;
+	    	margin-bottom: 0;
+	    	margin-top: 0;
+	    	line-height: 1.3em;
+	    	text-overflow: ellipsis;
+	    	overflow: hidden;
+	    }
+	    #header .header p {
+	    	padding: 5px 20px 20px;
+	    	font-size: 14px;
+	    	word-break: normal;
+	    	font-weight: 500;
+	    	font-family: Roboto, sans-serif;
+	    	margin-bottom: 0;
+	    	margin-top: 0;
+	    	line-height: 1.3em;
+	    	text-overflow: ellipsis;
+	    	overflow: hidden;
+	    }
+	    #header .header .arrow {
+	    	display: inline-block;
+	    	left: 50%;
+	    	margin-left: -12px;
+	    	margin-bottom: -12px;
+	    	width: 0;
+	    	height: 0;
+	    	top: 0;
+	    	border-left: 12px solid transparent;
+	    	border-right: 12px solid transparent;
+	    	border-top: 12px solid #181818;
+	    	float: left;
+	    	position: relative;
+	    }
+	    #service {
+	    	background: #fff;
+	    }
+	    #service .service {
+	    	width: 100%;
+	    	padding: 2px 0;
+	    	border-bottom: 1px solid #f5f5f5;
+	    	transition: background-color .3s ease;
+	    	cursor: pointer;
+	    	display: none;
+	    }
+	    #service .service a {
+	    	width: 100%;
+	    }
+	    #service .service img {
+	    	max-width: 125px;
+	    	display: block;
+	    	background-size: 100%;
+	    	margin: 14px 0 14px 15px;
+	    }
+	    #service .service .play {
+	    	text-align: center;
+	    	display: inline-block;
+	    	float: right;
+	    	margin: 15px 15px 15px 0;
+	    	border-radius: 5px;
+	    	border: 1px solid #777;
+	    	padding: 8px 10px;
+	    	white-space: nowrap;
+	    	overflow: hidden;
+	    	text-overflow: ellipsis;
+	    	max-width: 155px;
+	    	color: #777;
+	    }            
+	</style>
+</head>
+<body>
+	<div id="contain">
+		<div id="bg"><img alt="" id="bgimg" src=""></div>
+		<div id="imagecontainer"><img alt="" id="albumart" src=""></div>
+		<div id="header">
+			<div class="header">
+				<h1 class="artist">Download or Stream</h1>
+				<p class="where">Choose a service!</p>
+				<div class="arrow"></div>
+			</div>
+		</div>
+		<!-- Each service DIV is a store! The last one is a custom store/link/etc. -->
+		<div id="service">
+			<div class="service">
+				<a class="img-btn redirect" id="itunes" href=""><img alt="itunes" class="" height="40px" src="https://cdn.rawgit.com/chrstnsmthng/omnilink-tumblr-templates/master/assets/itunes.svg" style="display:inline-block;" width="125px"> <span class="play">Download</span></a>
+			</div>
+			<div class="service">
+				<a class="img-btn redirect" id="spotify" data-apptype="manual" data-player="spotify" data-servicetype="play" data-uri="" href=""><img alt="spotify" class="" height="40px" src="https://cdn.rawgit.com/chrstnsmthng/omnilink-tumblr-templates/master/assets/spotify.svg" style="display:inline-block;" width="125px"> <span class="play">Play</span></a>
+			</div>
+			<div class="service">
+				<a class="img-btn redirect" id="googleplay" data-apptype="manual" data-player="google-play" data-servicetype="download" href=""><img alt="google-play" class="" height="40px" src="https://cdn.rawgit.com/chrstnsmthng/omnilink-tumblr-templates/master/assets/googleplay.svg" style="display:inline-block;" width="125px"> <span class="play">Download</span></a>
+			</div>
+			<div class="service">
+				<a class="img-btn redirect" id="applemusic" data-apptype="manual" data-player="applemusic" data-servicetype="play" href=""><img alt="applemusic" class="" height="40px" src="https://cdn.rawgit.com/chrstnsmthng/omnilink-tumblr-templates/master/assets/applemusic.svg" style="display:inline-block;" width="125px"> <span class="play">Play</span></a>
+			</div>
+			<div class="service">
+				<a class="img-btn redirect" id="amazonmusic" data-apptype="manual" data-player="amazonmp3" data-servicetype="download" href=""><img alt="amazonmp3" class="" height="40px" src="https://cdn.rawgit.com/chrstnsmthng/omnilink-tumblr-templates/master/assets/amazonmp3.svg" style="display:inline-block;" width="125px"> <span class="play">Download</span></a>
+			</div>
+			<div class="service">
+				<a class="img-btn redirect" id="bandcamp" data-apptype="manual" data-player="bandcamp" data-servicetype="goto" href=""><img alt="bandcamp" class="" height="40px" src="https://cdn.rawgit.com/chrstnsmthng/omnilink-tumblr-templates/master/assets/bandcamp.svg" style="display:inline-block;" width="125px"> <span class="play">Go To</span></a>
+			</div>
+			<div class="service">
+				<a class="img-btn redirect" id="custom" data-apptype="manual" data-player="" data-servicetype="goto" href=""><img alt="" id="customimage" class="" height="40px" src="" style="display:inline-block;" width="125px"> <span class="play">Go To</span></a>
+			</div>
+		</div>
+	</div>
+	<script>
+	        //Insert your info here. The links don't show in the page if the quotes are blank.   
+	       let artistName = "";
+	       let albumName = "";
+		   let albumImageURL = "http://placehold.it/400x400";
+	       let iTunesURL = "";
+	       let spotifyURL = "";
+	       let googlePlayURL = "";
+	       let appleMusicURL = "";
+	       let amazonMusicURL = "";
+	       let bandcampURL = "";
+		   //For your custom page.
+	       let customURL = "";
+	       let customURLImage = "";
+		   //Set the information in the page.
+		   document.title = albumName;
+		   document.querySelector("link[rel*='icon']").href = albumImageURL;
+		   if ((albumImageURL.length > 0)) 
+			   document.getElementById("albumart").src = albumImageURL;
+		   	   document.getElementById("bgimg").src = albumImageURL;
+		   //A bunch of conditionals to set the album page depending on what is setup.
+		   if ((iTunesURL.length > 0)) {
+			   document.getElementById("itunes").href = iTunesURL;
+		       document.getElementById("itunes").parentElement.style.display = "inline-block"; }   			   
+		   if ((spotifyURL.length > 0)) {
+			   document.getElementById("spotify").href = spotifyURL;
+		       document.getElementById("spotify").parentElement.style.display = "inline-block";
+		   }			   
+		   if ((googlePlayURL.length > 0)) {
+			   document.getElementById("googleplay").href = googlePlayURL;
+		       document.getElementById("googleplay").parentElement.style.display = "inline-block";
+		   }			   
+		   if ((appleMusicURL.length > 0)) {
+			   document.getElementById("applemusic").href = appleMusicURL;
+		       document.getElementById("applemusic").parentElement.style.display = "inline-block";
+		   }			   
+		   if ((amazonMusicURL.length > 0)) {
+			   document.getElementById("amazonmusic").href = amazonMusicURL;
+		   	   document.getElementById("amazonmusic").parentElement.style.display = "inline-block";
+		   }  
+		   if ((bandcampURL.length > 0)) {
+			   document.getElementById("bandcamp").href = bandcampURL;
+		       document.getElementById("bandcamp").parentElement.style.display = "inline-block";
+		   }
+		   if ((customURL.length > 0)) {
+			   document.getElementById("custom").href = customURL;
+		   	   document.getElementById("customimage").src = customURLImage;
+		       document.getElementById("custom").parentElement.style.display = "inline-block";
+		   }
+	</script>
+</body>
+</html>
